@@ -9,7 +9,7 @@ def get_days_from_today(date):
     
     delta = int((date_today - date).total_seconds() / total_seconds_in_day)
     
-    return delta
+    return abs(delta)
     
 data = input("Enter data in format YYYY-MM-DD: ")
 print(get_days_from_today(data))
