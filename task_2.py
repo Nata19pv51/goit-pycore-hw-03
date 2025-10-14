@@ -26,13 +26,13 @@ def get_numbers_ticket(min_num, max_num, quantity):
         return random_nums_set
     
 min_value = 2
-max_value = 4
-quantity = "1"
+max_value = 44
+quantity = 44
 
 # We call get_numbers_ticket to get unique random values using min and max values, quantity that user entered:  
 random_nums = get_numbers_ticket(min_value, max_value, quantity)      
 
-print(f"{random_nums}")
+print(random_nums)
 
 # if random_nums:
 #     print(f"There are {quantity} unique random numbers: \n{random_nums}")
