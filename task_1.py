@@ -9,8 +9,8 @@ def get_days_from_today(date):
         date = datetime.strptime(date, "%Y-%m-%d")
         total_seconds_in_day = 24 * 60 * 60
         # Transform seconds to days 
-        delta = int((date.date() - date_today.date()).total_seconds() / total_seconds_in_day)
-        return abs(delta)
+        delta = int((date_today.date() - date.date()).total_seconds() / total_seconds_in_day)
+        return delta
     except ValueError:
         print("Oops!  That was no valid date format")
    
