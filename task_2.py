@@ -17,25 +17,19 @@ def get_numbers_ticket(min_num, max_num, quantity):
                     random_nums_list = sorted(random_nums_set)
                     return random_nums_list
                 else:
-                    return random_nums_set 
+                    return list(random_nums_set) 
             else:
-                return random_nums_set 
+                return list(random_nums_set)  
         else:
-            return random_nums_set        
+            return list(random_nums_set)         
     else:
-        return random_nums_set
+        return list(random_nums_set) 
     
 min_value = 2
 max_value = 44
-quantity = 44
+quantity = "23"
 
 # We call get_numbers_ticket to get unique random values using min and max values, quantity that user entered:  
 random_nums = get_numbers_ticket(min_value, max_value, quantity)      
 
 print(random_nums)
-
-# if random_nums:
-#     print(f"There are {quantity} unique random numbers: \n{random_nums}")
-# else:
-#     # print("Enter correct values")    
-#     print(f"{random_nums}")    
